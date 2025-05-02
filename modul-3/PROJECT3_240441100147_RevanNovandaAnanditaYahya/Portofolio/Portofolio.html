@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }  
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="sticky-nav bg-white text-black px-6 py-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <!-- Nama -->
+      <div class="text-2">
+        <a href="#home" class="hover:text-red-300 font-bold">Revan Novanda Anandita Yahya</a>
+      </div>
+      <!-- Menu -->
+      <div class="space-x-2 hidden gap-7 md:flex">
+        <a href="#resume" class="hover:text-red-300">Resume</a> 
+        <a href="#projects" class="hover:text-red-300">Project </a> 
+        <a href="#contact" class="hover:text-red-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="flex items-center pl-40 mt-30">
+      <img src="pics.jpg" alt="foto" class="w-90 h-90 rounded-full object-cover hover:scale-105 transition-transform duration-300"/>
+      <div class="text-center md:text-left pl-10">
+        <h1 class="text-5xl font-extrabold mb-4">Get to Know Me.</h1>
+        <h2 class="text-x1 font-semibold mb-2">Hejo! i'm Revan Novanda Anandita Yahya</h2>
+        <p class="text-gray-600 mb-6 max-w-md mx-auto md:mx-0">
+          I'm still learning web programming throught my Univerity Trunojoyo Madura, I like learning new stuff and eager to learn for more!
+        </p>
+        <div class="flex gap-8">
+          <a href="#resume" class="w-24 h-24 flex items-center justify-center rounded-full bg-yellow-400 font-semibold hover:bg-white border-1 transition">Resume</a>
+          <a href="#projects" class="w-24 h-24 flex items-center justify-center rounded-full bg-red-500 font-semibold hover:bg-white border-1 transition">Project</a>
+          <a href="#contact" class="w-24 h-24 flex items-center justify-center rounded-full bg-cyan-400 font-semibold hover:bg-white border-1 transition">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h1 class="text-5xl mt-40 pl-40 font-extrabold">Resume</h1>
+    <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg">
+        <div class="flex flex-col md:flex-row gap-8">
+          <div class="flex-1">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Education</h2>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700">SDN Pare 4: 2012-2018</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700">SMPN Pare 4: 2018-2021</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700">SMAN Pare 2: 2021-2024</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700">Universitas Trunojoyo Madura: 2024-Now</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Skills & Expertise</h2>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700"> Strong Work Ethic</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700"> Teamwork Skills</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700"> Flexibility</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-gray-600 mr-2">•</span>
+                <span class="text-gray-700"> Communication Skills</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h1 class="text-5xl mt-40 pl-40 font-extrabold">Project</h1>
+    <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="ngopi.jpg" alt="Project 1" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Cafe Website</h2>
+            <p class="text-gray-600">Cafe Website build with css</p>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="Berita.jpg" alt="Project 2" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Campus News</h2>
+            <p class="text-gray-600">News Campus with tailwind</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h1 class="text-5xl mt-40 pl-40 font-extrabold">Contact</h1>
+    <h2 class="text-2xl pl-40 font-grey">Looking forward to hearing from you!</h2>
+    <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="overflow-hidden rounded-lg">
+          <p class="text-2xl font-bold">Phone</p>
+          <p>+62 0822-4500-9275</p>
+          <p class="text-2xl font-bold mt-10">Email</p>
+          <p>revannovanda2005@gmail.com</p>
+          <p class="text-2xl font-bold mt-10">Instagram</p>
+          <a href="https://www.instagram.com/insomniaclizz_">@Insomniaclizz_</a>
+          <p class="text-2xl font-bold mt-10">Linkedin</p>
+          <a href="https://www.linkedin.com/feed/">Revan Novanda Anandita Yahya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-gray-800 text-center mt-10">@2025 By Revan Novanda Anandita Yahya</footer>
+</body>
+</html>

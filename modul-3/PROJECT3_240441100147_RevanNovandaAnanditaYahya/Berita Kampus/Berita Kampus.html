@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Kampus UTM</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .news-card:hover .news-image {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-grey-50">
+    <nav class="sticky-nav bg-black text-white px-6 py-4">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Nama -->
+        <div class="text-2">
+          <a href="#home" class="hover:text-red-300 font-bold">UTM News</a>
+        </div>
+        <!-- Menu -->
+        <div class="space-x-2 hidden gap-7 md:flex">
+          <a href="#berita" class="hover:text-red-300">Berita</a> 
+          <a href="#tentang" class="hover:text-red-300">Tentang </a> 
+          <a href="#contact" class="hover:text-red-300">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+<!-- Header -->
+<header id="home" class="bg-gray-800 text-white py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">Berita Kampus UTM</h1>
+    </div>
+</header>
+
+    <!-- Section Berita -->
+    <section id="berita" class="py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Berita 1 -->
+                <article class="news-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="Berita 1.jpg" alt="Berita Kampus" class="news-image w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>Bangkalan, 26 April 2025 </span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">60 Talks: Sharing Hearing #AussieBangetCorner Bangkitkan Semangat Global di UTM</h3>
+                        <p class="items-center text-gray-600 mb-4">UPA Perpustakaan Universitas Trunojoyo Madura (UTM) kembali menghidupkan semangat literasi global melalui kegiatan 60 Talks: Sharing Hearing #AussieBangetCorner yang diselenggarakan pada Sabtu pagi di Aussie Banget Corner (ABC), Perpustakaan UTM lantai 4 Gedung Cakra.<p>
+                        <a href="https://www.trunojoyo.ac.id/60-talks-sharing-hearing-aussiebangetcorner-bangkitkan-semangat-global-di-utm/" class="text-blue-600 hover:text-blue-800 font-medium">Baca selengkapnya →</a>
+                    </div>
+                </article>
+
+                <!-- Berita 2 -->
+                <article class="news-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="Berita 2.jpg" alt="Berita Kampus" class="news-image w-full h-48 object-cover hover:scale-120">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>Malang, 21 April 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Universitas Trunojoyo Madura Raih Penghargaan Bergengsi Platinum dan Bronze di Ajang Brawijaya Halal Matric Award 2025</h3>
+                        <p class="flex justify-center items-center text-gray-600 mb-4">Universitas Trunojoyo Madura (UTM) kembali menorehkan prestasi membanggakan di kancah nasional dengan meraih dua penghargaan bergengsi sekaligus dalam ajang Brawijaya Halal Matric Award 2025. UTM berhasil membawa pulang Platinum Award untuk kategori overall ranking dan Bronze Award untuk kategori halal policy.</p>
+                        <a href="https://www.trunojoyo.ac.id/universitas-trunojoyo-madura-raih-penghargaan-bergengsi-platinum-dan-bronze-di-ajang-brawijaya-halal-matric-award-2025/" class="text-blue-600 hover:text-blue-800 font-medium">Baca selengkapnya →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="#" class="inline-block px-6 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900">Lihat Semua Berita</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Tentang -->
+<section id="tentang" class="py-12 mb-10">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">Tentang UTM</h2>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+           <p class="text-gray-700 mb-4 text-center">
+                Universitas Trunojoyo Madura (UTM) adalah perguruan tinggi negeri yang terletak di Kabupaten Bangkalan, Madura. Didirikan pada tahun 2001, UTM telah berkembang menjadi salah satu perguruan tinggi terkemuka di Jawa Timur dengan berbagai program studi unggulan.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-12 bg-white text-center">
+    <div class="max-w-xl mx-auto px-6 space-y-6">
+      <h2 class="text-2xl font-bold text-gray-800 mt-10">Hubungi Kami</h2>
+
+      <div class="text-gray-700 space-y-1">
+        <p><strong>Email:</strong> info@trunojoyo.ac.id</p>
+        <p><strong>Telepon:</strong> (031) 3011146</p>
+        <p><strong>Alamat:</strong> Jl. Raya Telang, Kamal, Bangkalan, Jawa Timur</p>
+      </div>
+    </div>
+</section>
+  
+    <!-- Footer-->
+<footer class="bg-gray-800 text-white py-8 mt-10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <p>@ 2025 Universitas Trunojoyo Madura By Revan Novanda Anandita Yahya</p>
+    </div>
+</footer>
+</body>
+</html>
