@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    .dark-mode .form-control,
+    .dark-mode .form-control:focus {
+      background-color: #1e1e1e;
+      color: white;
+      border: 1px solid #444;
+    }
+
+    .dark-mode .form-label {
+      color: #ccc;
+    }
+
+    .dark-mode .text-muted {
+      color: #aaa !important;
+    }
+
+    .dark-mode .btn-outline-secondary {
+      color: white;
+      border-color: white;
+    }
+
+    .dark-mode .btn-outline-secondary:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .error-message {
+      color: #ff6b6b;
+      font-size: 0.9rem;
+      margin-top: 0.2rem;
+    }
+
+    #toggle-theme {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body class="dark-mode">
+  <button id="toggle-theme" class="btn btn-light btn-sm">Toggle Dark Mode</button>
+
+  <div class="container-fluid">
+    <div class="row vh-100">
+      <div class="col-md-6 d-flex align-items-center justify-content-center bg-primary text-white">
+        <img src="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\UTS\ASSET SESI 1\Gambar 5.png" alt="Illustration" class="img-fluid" />
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="w-75">
+          <img src="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\UTS\ASSET SESI 1\logo.png" alt="Logo" height="40" width="230" />
+          <h3 class="mt-4">Mulai Hari Ini</h3>
+          <p class="text-muted">Menunggu besok? Bisa jadi kamu tidak pernah benar-benar mulai.</p>
+          <form id="signup" novalidate>
+            <div class="mb-3">
+              <label for="email" class="form-label">Alamat Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Masukkan alamat email Anda" />
+              <div id="emailError" class="error-message"></div>
+            </div>
+            <div class="mb-3">
+              <label for="fullname" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="fullname" placeholder="Masukkan nama lengkap Anda" />
+              <div id="fullnameError" class="error-message"></div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Masukkan password Anda" />
+              <div id="passwordError" class="error-message"></div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+            <button type="button" class="btn btn-outline-secondary w-100 mt-2">
+              <img src="C:\Users\a412ua\Downloads\ic_google.png" alt="Google" width="20" class="me-2" />Sign Up with Google
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("signup");
+    const emailInput = document.getElementById("email");
+    const fullnameInput = document.getElementById("fullname");
+    const passwordInput = document.getElementById("password");
+
+    const emailError = document.getElementById("emailError");
+    const fullnameError = document.getElementById("fullnameError");
+    const passwordError = document.getElementById("passwordError");
+
+    const toggleThemeBtn = document.getElementById("toggle-theme");
+
+    function resetErrors() {
+      emailError.textContent = "";
+      fullnameError.textContent = "";
+      passwordError.textContent = "";
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      resetErrors();
+
+      const email = emailInput.value.trim();
+      const fullname = fullnameInput.value.trim();
+      const password = passwordInput.value.trim();
+
+      let valid = true;
+
+      if (!email.includes("@")) {
+        emailError.textContent = "Email harus mengandung karakter @";
+        valid = false;
+      }
+
+      if (fullname.length < 3) {
+        fullnameError.textContent = "Nama lengkap minimal 3 karakter";
+        valid = false;
+      }
+
+      if (password.length < 4) {
+        passwordError.textContent = "Password minimal 4 karakter";
+        valid = false;
+      }
+
+      if (valid) {
+        alert("Form sukses divalidasi!");
+        form.reset();
+      }
+    });
+
+    // Mode gelap
+    toggleThemeBtn.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+      const isDark = document.body.classList.contains("dark-mode");
+      toggleThemeBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
+      localStorage.setItem("darkMode", isDark);
+    });
+
+    // Mode terang
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("darkMode") === "true";
+      document.body.classList.toggle("dark-mode", savedTheme);
+      toggleThemeBtn.textContent = savedTheme ? "Light Mode" : "Dark Mode";
+    });
+  </script>
+</body>
+</html>

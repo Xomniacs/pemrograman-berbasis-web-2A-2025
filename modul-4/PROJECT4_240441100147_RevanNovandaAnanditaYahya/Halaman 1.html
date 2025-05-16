@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteAcademy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    .dark-mode a {
+      color: #9ecbff;
+    }
+
+    .dark-mode .btn-outline-primary,
+    .dark-mode .btn-outline-secondary,
+    .dark-mode .btn {
+      color: white;
+      border-color: white;
+    }
+
+    .dark-mode .text-muted {
+      color: #ccc;
+    }
+
+    .dark-mode .btn-light {
+      background-color: white;
+      color: black;
+    }
+
+    a {
+     text-decoration: none;
+    }
+  </style>
+</head>
+
+<!-- Navbar -->
+<body>
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="">
+        <img src="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\UTS\ASSET SESI 1\Logo-.png" width="30" height="30" class="me-2" />
+        <strong>ByteAcademy</strong>
+      </a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="">Program</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Mentor</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Business</a></li>
+        </ul>
+        <button onclick="toggleMode()" class="btn btn-outline-secondary me-2">Dark Mode</button>
+        <a href="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\Code\Modul 4\Halaman 2.html" class="btn btn-outline-primary me-2">Sign In</a>
+        <a href="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\Code\Modul 4\Halaman 2.html" class="btn btn-primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Pengenalan -->
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bold">Buka Karir <span class="text-primary">Teknologi</span><br />Anda dengan ByteAcademy</h1>
+        <p class="mt-3">Pelajari coding, ilmu data, dan keamanan siber dari para pakar industri. Bangun keterampilan di dunia nyata dan luncurkan masa depan Anda di bidang teknologi.</p>
+        <a href="" class="btn btn-primary mt-3">Get Started</a>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\UTS\ASSET SESI 1\Gambar 1.png" alt="Hero" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Promosi -->
+  <section class="text-center py-5">
+    <p class="text-success fw-semibold">Kenapa Pilih Kami?</p>
+    <h3>Karena Belajar Bisa Lebih Cepat & Menyenangkan!</h3>
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <img src="C:\Users\a412ua\Downloads\icon1.png" width="40" class="mb-3" />
+        <h5>Diversity</h5>
+        <p>Belajar dari siapa pun di seluruh dunia dan dapatkan keterampilan baru</p>
+      </div>
+      <div class="col-md-3">
+        <img src="C:\Users\a412ua\Downloads\icon2.png" width="40" class="mb-3" />
+        <h5>A.I Guideline</h5>
+        <p>ByteAcademy akan membantu Anda memilih jalur mana yang cocok untuk Anda</p>
+      </div>
+      <div class="col-md-3">
+        <img src="C:\Users\a412ua\Downloads\icon3.png" width="40" class="mb-3" />
+        <h5>1-1 Mentoring</h5>
+        <p>Kami akan memastikan bahwa Anda akan mendapatkan apa yang benar-benar Anda butuhkan</p>
+      </div>
+      <div class="col-md-3">
+        <img src="C:\Users\a412ua\Downloads\icon4.png" width="40" class="mb-3" />
+        <h5>Future Job</h5>
+        <p>Raih pekerjaan impian Anda di perusahaan impian bersama kami</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Highlights -->
+  <section class="container py-5">
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-center">
+        <img src="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\UTS\ASSET SESI 1\Gambar 2.png" alt="Section" class="img-fluid" />
+      </div>
+      <div class="col-md-6">
+        <h4>Ubah Passion Anda Menjadi Keterampilan Teknologi Nyata</h4>
+        <p>Belajar dengan proyek nyata dan praktik langsung di bidang coding, data, dan keamanan siber.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 order-md-2 text-center">
+        <img src="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\UTS\ASSET SESI 1\Gambar 3.png" alt="Section" class="img-fluid" />
+      </div>
+      <div class="col-md-6 order-md-1">
+        <h4>Belajar dari Ahli Industri dan Bangun Masa Depan Anda</h4>
+        <p>Program dirancang oleh para profesional dan mentor top dari industri teknologi.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="C:\Users\a412ua\Documents\Dunia Perkuliahan\Semester 2\Praktikum PBW\UTS\ASSET SESI 1\Gambar 4.png" alt="Section" class="img-fluid" />
+      </div>
+      <div class="col-md-6">
+        <h4>Dapatkan Pengalaman Praktis untuk Sukses di Coding, Data Science, dan Cybersecurity</h4>
+        <p>Praktik langsung dengan tools & kasus industri nyata.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Iklan -->
+  <section class="py-5" style="background: darkblue; color: white; ">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h3 class="fw-semibold">Mulailah Transformasi Anda dengan Byte Academy</h3>
+          <p>Kami memiliki beberapa rencana yang mungkin cocok untuk Anda.<br>Silakan unduh syllabus lengkap kami di bawah ini.</p>
+          <a href="" class="btn btn-light text-black mt-3">Lihat Syllabus</a>
+        </div>
+        <div class="col-md-5 offset-md-1">
+          <div class="bg-white text-dark p-4 rounded-4 shadow-sm">
+            <p class="text-success fw-bold mb-1 text-center">BARU MULAI</p>
+            <h4 class="fw-bold mb-3">Rp.2.350.000</h4>
+            <ul class="list-unstyled">
+              <li>✅ Program Mentoring 1-1</li>
+              <li>✅ Sertifikat Proyek Akhir</li>
+              <li>✅ Video Kursus Offline</li>
+              <li>✅ Menambah Portofolio</li>
+            </ul>
+            <a href="" class="btn btn-outline-primary mt-3 w-100">Mulailah Dengan Rencana Ini</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-semibold">ByteAcademy</h5>
+          <p>Persiapkan Diri Anda untuk Masa Depan dengan Pembelajaran Spesifik Industri di Byte Academy</p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-semibold">Bisnis Byte</h6>
+          <ul class="list-unstyled">
+            <li><a href="">Teknologi di ByteAcademy</a></li>
+            <li><a href="">Unduh Aplikasinya</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-semibold">Karir</h6>
+          <ul class="list-unstyled">
+            <li><a href="">Blog</a></li>
+            <li><a href="">Bantuan dan Dukungan</a></li>
+            <li><a href="">Afiliasi</a></li>
+            <li><a href="">Investasi</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-semibold">Syarat dan Ketentuan</h6>
+          <ul class="list-unstyled">
+            <li><a href="">Kebijakan Privasi</a></li>
+            <li><a href="">Pengaturan Cookie</a></li>
+            <li><a href="">Peta Situs</a></li>
+            <li><a href="">Aksesibilitas</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        &copy; 2025 ByteAcademy. All rights reserved. Designed by Revan Novanda Anandita Yahya.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mode gelap -->
+  <script>
+  function toggleMode() {
+    const isDark = document.body.classList.toggle("dark-mode");
+    const navbar = document.querySelector(".navbar");
+    const footer = document.querySelector("footer");
+
+    navbar.classList.toggle("bg-dark", isDark);
+    navbar.classList.toggle("text-white", isDark);
+    navbar.classList.toggle("bg-light", !isDark);
+
+    footer.classList.toggle("bg-dark", isDark);
+    footer.classList.toggle("text-white", isDark);
+    footer.classList.toggle("bg-light", !isDark);
+
+    document.querySelectorAll(".bg-white, .bg-dark").forEach(el => {
+      el.classList.toggle("bg-dark", isDark);
+      el.classList.toggle("text-white", isDark);
+      el.classList.toggle("bg-white", !isDark);
+      el.classList.toggle("text-dark", !isDark);
+    });
+
+    document.querySelectorAll(".text-dark, .text-white").forEach(el => {
+      el.classList.toggle("text-white", isDark);
+      el.classList.toggle("text-dark", !isDark);
+    });
+  }
+</script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
